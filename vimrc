@@ -7,6 +7,8 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
+" Vundle plugin manager
+" https://github.com/VundleVim/Vundle.vim
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
@@ -24,7 +26,13 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'psf/black'
 
 " Auto Complete
-Bundle 'Valloric/YouCompleteMe'
+" Jedi-Vim
+" https://github.com/davidhalter/jedi-vim
+Plugin 'davidhalter/jedi-vim'
+
+
+" Uncomment to use it
+" Bundle 'Valloric/YouCompleteMe'
 
 " Syntax check
 Plugin 'vim-syntastic/syntastic'
@@ -48,7 +56,10 @@ filetype plugin indent on    " required
 " UTF-8 support
 set encoding=utf-8
 
-" set side numbers
+" Set spellchecker
+set spell spelllang=en_us
+
+" Set side numbers
 set number
 set ruler
 set nu
