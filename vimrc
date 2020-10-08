@@ -68,9 +68,11 @@ set nu
 colorscheme dracula
 
 " Open NERDTree on start
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 " Show hidden files
 let NERDTreeShowHidden=1
+" Toggle NerdTree
+nnoremap <C-e> :NERDTreeToggle<CR>
 
 " Highlight trailing spaces
 highlight RedundantSpaces ctermbg=red guibg=red
