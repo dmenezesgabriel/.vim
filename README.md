@@ -43,6 +43,12 @@ cd ~/.vim/bundle/YouCompleteMe && \
 ./install.py --clang-completer
 ```
 
+## Installation
+
+````sh
+git clone https://github.com/dmenezesgabriel/.vim.git ~/.vim
+```
+
 ## Usage
 
 ### Split layouts
@@ -51,7 +57,7 @@ cd ~/.vim/bundle/YouCompleteMe && \
 
 ```sh
 :sp <filename>
-```
+````
 
 - **Split layout horizontally**:
 
@@ -84,4 +90,10 @@ r
 
 ```sh
 R
+```
+
+- **Collapse file browser**:
+
+```sh
+CTRL + e
 ```
