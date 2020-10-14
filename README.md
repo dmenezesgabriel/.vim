@@ -45,7 +45,7 @@ cd ~/.vim/bundle/YouCompleteMe && \
 
 ## Installation
 
-````sh
+```sh
 git clone https://github.com/dmenezesgabriel/.vim.git ~/.vim
 ```
 
@@ -57,7 +57,7 @@ git clone https://github.com/dmenezesgabriel/.vim.git ~/.vim
 
 ```sh
 :sp <filename>
-````
+```
 
 - **Split layout horizontally**:
 
