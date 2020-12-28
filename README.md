@@ -14,6 +14,12 @@ sudo apt install vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
+- **Install plugins**:
+
+```sh
+vim +'PluginInstall' +qa
+```
+
 ### Create a Symbolic link
 
 #### What Are Symbolic Links?
@@ -26,7 +32,7 @@ touch ~/.vimrc && \
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
 
-### YouCompleteMe requirements
+### (Optional) YouCompleteMe requirements
 
 https://github.com/ycm-core/YouCompleteMe
 
@@ -45,8 +51,16 @@ cd ~/.vim/bundle/YouCompleteMe && \
 
 ## Installation
 
+- **Clone**:
+
 ```sh
 git clone https://github.com/dmenezesgabriel/.vim.git ~/.vim
+```
+
+- **Install**
+
+```sh
+Make install
 ```
 
 ## Usage
