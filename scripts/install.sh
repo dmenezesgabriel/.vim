@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Install vim
 sudo apt install vim
 # CLone configs
