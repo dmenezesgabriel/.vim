@@ -63,6 +63,12 @@ git clone https://github.com/dmenezesgabriel/.vim.git ~/.vim
 Make install
 ```
 
+or
+
+| Method   | Command                                                                                                  |
+| :------- | :------------------------------------------------------------------------------------------------------- |
+| **curl** | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/dmenezesgabriel/.vim/master/scripts/install.sh)"` |
+
 ## Usage
 
 ### Split layouts
