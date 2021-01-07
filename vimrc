@@ -57,7 +57,7 @@ filetype plugin indent on    " required
 set encoding=utf-8
 
 " Set spellchecker
-set spell spelllang=en_us
+set spell spelllang=pt_br,en_us
 
 " Set side numbers
 set number
