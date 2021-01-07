@@ -8,18 +8,6 @@
 sudo apt install vim
 ```
 
-- **Vundle**:
-
-```sh
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-```
-
-- **Install plugins**:
-
-```sh
-vim +'PluginInstall' +qa
-```
-
 ### Create a Symbolic link
 
 #### What Are Symbolic Links?
