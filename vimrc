@@ -129,6 +129,13 @@ syntax on
 " System clipboard
 set clipboard=unnamed
 
+" Black
+" Auto format on save
+autocmd BufWritePre *.py execute ':Black'
+
+" Auto format on key press
+nnoremap <F9> :Black<CR>
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
