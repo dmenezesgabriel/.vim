@@ -8,7 +8,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'dracula/vim', { 'name': 'dracula' }
 
 " Directory tab
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Markdown syntax highlighting
 Plug 'godlygeek/tabular'
@@ -63,6 +64,18 @@ colorscheme dracula
 let NERDTreeShowHidden=1
 " Toggle NerdTree
 nnoremap <C-e> :NERDTreeToggle<CR>
+
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ "Unknown"   : "?"
+    \ }
 
 " Highlight trailing spaces
 highlight RedundantSpaces ctermbg=red guibg=red
