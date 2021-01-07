@@ -3,3 +3,5 @@ black
 bundle/*
 spell/
 .netrwhist
+autoload/
+plugged/

@@ -1,57 +1,47 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" Vundle plugin manager
-" https://github.com/VundleVim/Vundle.vim
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" Install Plugins
+call plug#begin('~/.vim/plugged')
 
 " Dracula Theme
-Plugin 'dracula/vim', { 'name': 'dracula' }
+Plug 'dracula/vim', { 'name': 'dracula' }
 
 " Directory tab
-Plugin 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 
 " Markdown syntax highlighting
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 
 " Python Black
-Plugin 'psf/black'
+Plug 'psf/black'
 
 " Auto Complete
 " Jedi-Vim
 " https://github.com/davidhalter/jedi-vim
-Plugin 'davidhalter/jedi-vim'
-
+Plug 'davidhalter/jedi-vim'
 
 " Uncomment to use it
 " Bundle 'Valloric/YouCompleteMe'
 
 " Syntax check
-Plugin 'vim-syntastic/syntastic'
+Plug 'vim-syntastic/syntastic'
 
 " Linter Flake8
-Plugin 'nvie/vim-flake8'
+Plug 'nvie/vim-flake8'
 
 " Search
-Plugin 'kien/ctrlp.vim'
+Plug 'kien/ctrlp.vim'
 
 " Git integration
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 " Powerline- status bar
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+" Initialize plugin system
+call plug#end()
 
 " UTF-8 support
 set encoding=utf-8
@@ -135,15 +125,3 @@ autocmd BufWritePre *.py execute ':Black'
 
 " Auto format on key press
 nnoremap <F9> :Black<CR>
-
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
