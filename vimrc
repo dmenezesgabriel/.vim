@@ -1,5 +1,5 @@
 set nocompatible              " be iMproved, required
-filetype off                  " required
+filetype plugin indent on
 
 " Install Plugins
 call plug#begin('~/.vim/plugged')
@@ -41,6 +41,12 @@ Plug 'tpope/vim-fugitive'
 " Powerline- status bar
 Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
+" Auto close brackets
+Plug 'jiangmiao/auto-pairs'
+
+" Tmux
+Plug 'christoomey/vim-tmux-navigator'
+
 " Initialize plugin system
 call plug#end()
 
@@ -54,6 +60,8 @@ set spell spelllang=pt_br,en_us
 set number
 set ruler
 set nu
+" No case sensitive
+" set ignorecase
 
 " Set color scheme
 colorscheme dracula
@@ -135,6 +143,10 @@ set clipboard=unnamed
 " Black
 " Auto format on save
 autocmd BufWritePre *.py execute ':Black'
+" line length
+let g:black_linelength = 79
+" Virtual environment
+let g:black_virtualenv = '~/environments/general'
 
 " Auto format on key press
 nnoremap <F9> :Black<CR>
