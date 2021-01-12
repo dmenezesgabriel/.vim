@@ -150,3 +150,9 @@ let g:black_virtualenv = '~/environments/general'
 
 " Auto format on key press
 nnoremap <F9> :Black<CR>
+
+" Search for custom configuration file
+if filereadable("configs/.vim.custom")
+    so configs/.vim.custom
+endif
+
